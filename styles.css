@@ -7,6 +7,7 @@
 
 html{
     scroll-behavior: smooth;
+    font-family: 'Bai Jamjuree', sans-serif;
 }
 
 .max-width{
@@ -22,11 +23,13 @@ html{
     padding: 12px 34px;
     font-size: 20px;
     border-radius: 6px;
+    height: 51px;
 }
 
 /* Nav Bar Section*/
 
 .navbar{
+    background-color: white;
     position: fixed;
     width: 100%;
     z-index: 100;
@@ -133,4 +136,62 @@ html{
 
 .header .header-content .btn{
     margin-top: 20px;
+}
+
+.header .header-content .btn:hover{
+    background-color: white;
+    color: orange;
+    border: 1px solid orange;
+}
+
+.header .header-content .btn:hover span {
+    color: rgb(255, 255, 255);
+    color: orange;
+}
+
+/* About me Section*/
+
+.about{
+    padding: 20px 0;
+    box-shadow: 10px 1px 10px rgba(0, 0, 0, 0.1);
+}
+
+.about .about-content{
+    display: flex;
+    flex-wrap: wrap;   
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about .about-content .left{
+    width: 45%;
+}
+
+.about .about-content .left img{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 1px solid orange;
+}
+
+.about .about-content .right{
+    width: 55%;
+}
+
+.about .about-content .right .text{
+    font-size: 17px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.about .about-content h2, h3{
+    text-align: center;
+    margin: 20px 0;
+}
+
+.about .about-content h2{
+    font-size: 35px;
+    text-decoration: underline;
+    text-underline-offset: 0.5em;
 }
