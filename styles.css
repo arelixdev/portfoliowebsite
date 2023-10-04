@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+.max-width{
+    max-width: 1300px;
+    margin: auto;
+    padding: 0 80px;
+}
+
+.btn{
+    display: inline-block;
+    background: orange;
+    color: #fff;
+    padding: 12px 34px;
+    font-size: 20px;
+    border-radius: 6px;
+}
+
+/* Nav Bar Section*/
+
+.navbar{
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    padding: 30px 0;
+    font-family: 'Bai Jamjuree', sans-serif;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .menu li {
+    list-style: none;
+    display: inline-block;
+}
+
+.navbar .logo a {
+    color: rgb(0, 0, 0);
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.navbar .logo a span{
+    color: orange;
+    font-size: 35px;
+    font-weight: 600;
+}
+
+.navbar .menu li a {
+    color: rgb(0, 0, 0);
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 25px;
+    transition: all 0.5s;
+}
+
+.navbar .menu li:not(:last-child) a:hover {
+    font-size: 24px;
+    color: orange;
+}
+
+.navbar .menu li:last-child a:hover {
+    transform: scale(1.2);
+    background-color: white;
+    color: orange;
+    border: 1px solid orange;
+}
+
+.navbar .menu li a span {
+    color: rgb(255, 255, 255);
+}
+
+.navbar .menu li a:hover span {
+    color: rgb(255, 255, 255);
+    color: orange;
+}
+
+
+.menu-btn{
+    color: #fff;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+
+/* Header Section*/
+
+.header{
+    display: flex;
+    height: 100vh;
+    min-height: 500px;
+    font-family: 'Bai Jamjuree', cursive;
+}
+
+.header .max-width{
+    margin: auto 0 auto 40px;
+}
+
+.header .header-content .text-1{
+    font-size: 27px;
+    font-weight: 400;
+}
+
+.header .header-content .text-2{
+    font-size: 75px;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.header .header-content .text-3{
+    font-size: 40px;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.header .header-content span{
+    color: orange;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.header .header-content .btn{
+    margin-top: 20px;
+}
