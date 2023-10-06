@@ -84,30 +84,38 @@
             <div class="galery">
                 <div class="card">
                     <img src="images/image2.jpg" alt="">
-                    <div class="overlay" onclick="openModal();">
+                    <div class="overlay" onclick="openModal();currentSlide(1)">
                         <h3>Project name</h3>
                         <p>Project Tools</p>
                     </div>
                 </div>
                 <div class="card">
                     <img src="images/image1.jpg" alt="">
-                    <div class="overlay" onclick="openModal();">
+                    <div class="overlay" onclick="openModal();currentSlide(2)">
                         <h3>Project name</h3>
                         <p>Project Tools</p>
                     </div>
                 </div>
             </div>
 
-            <div id='modal' class='modal'>
+            <div id='modal' class='modal' onclick='closeModal()'>
                 <span class='close' onclick='closeModal()'>&times;</span>
                 <div class='slide-show'>
                   <div class='slide'>
-                    <div class="numbertext">1 / 2</div>
-                    <img src='https://img.freepik.com/free-vector/gradient-pastel-sky-background_23-2148917404.jpg?size=626&ext=jpg&ga=GA1.2.1569143691.1654150849'>
+                    <img src='https://img.freepik.com/free-vector/hand-painted-watercolor-abstract-background_23-2148998534.jpg?size=626&ext=jpg&ga=GA1.2.1569143691.1654150849'>
+                    <section class="infobox">
+                        <h1>ProjectName</h1>
+                        <h2>Technologies</h2>
+                        <p>Project Description</p>
+                    </section>
                   </div>
                   <div class='slide'>
-                    <div class="numbertext">2 / 2</div>
                     <img src='https://img.freepik.com/free-vector/hand-painted-watercolor-abstract-background_23-2148998534.jpg?size=626&ext=jpg&ga=GA1.2.1569143691.1654150849'>
+                    <section class="infobox">
+                        <h1>ProjectName</h1>
+                        <h2>Technologies</h2>
+                        <p>Project Description</p>
+                    </section>
                   </div>
                 </div>
               </div>
