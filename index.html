@@ -84,21 +84,33 @@
             <div class="galery">
                 <div class="card">
                     <img src="images/image2.jpg" alt="">
-                    <div class="overlay">
+                    <div class="overlay" onclick="openModal();">
                         <h3>Project name</h3>
                         <p>Project Tools</p>
-                        <button class="info">Plus d'info</button>
                     </div>
                 </div>
                 <div class="card">
                     <img src="images/image1.jpg" alt="">
-                    <div class="overlay">
+                    <div class="overlay" onclick="openModal();">
                         <h3>Project name</h3>
                         <p>Project Tools</p>
-                        <button class="info">Plus d'info</button>
                     </div>
                 </div>
             </div>
+
+            <div id='modal' class='modal'>
+                <span class='close' onclick='closeModal()'>&times;</span>
+                <div class='slide-show'>
+                  <div class='slide'>
+                    <div class="numbertext">1 / 2</div>
+                    <img src='https://img.freepik.com/free-vector/gradient-pastel-sky-background_23-2148917404.jpg?size=626&ext=jpg&ga=GA1.2.1569143691.1654150849'>
+                  </div>
+                  <div class='slide'>
+                    <div class="numbertext">2 / 2</div>
+                    <img src='https://img.freepik.com/free-vector/hand-painted-watercolor-abstract-background_23-2148998534.jpg?size=626&ext=jpg&ga=GA1.2.1569143691.1654150849'>
+                  </div>
+                </div>
+              </div>
         </div>
     </section>
     <!-- Tools Section -->

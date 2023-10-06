@@ -4,3 +4,11 @@ var typed = new Typed(".typing",{
     backSpeed: 60,
     loop: true
 })
+
+const openModal = () => {
+    document.getElementById("modal").style.display = "block";
+}
+
+function closeModal() {
+    document.getElementById("modal").style.display = "none";
+}
