@@ -617,3 +617,48 @@ button:hover {
     color: orange;
     border: 1px solid orange;
 }
+
+/*Footer Section*/
+.footer{
+    background-color: #222620;
+    position: relative;
+    width: 100%;
+}
+
+.footer-content{
+    text-align: center;
+}
+
+.footer-content i{
+    
+    font-size: clamp(2rem, 5vw, 2rem);
+    margin: 20px;
+    margin-top: 60px;
+}
+
+.arrow {
+    font-size: clamp(2rem, 5vw, 2rem);
+    cursor: pointer;
+    background-color: orange;
+    padding: 10px;
+    position: absolute;
+    top : -25px;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    height: 50px;
+    width: 50px;
+}
+
+.foot-note{
+    text-align: center;
+    color: white;
+    font-weight: 400;
+    padding-bottom: 20px;
+    font-size: 12px;
+}
+
+.hightlight{
+    color: orange;
+    font-weight: 600;
+}
