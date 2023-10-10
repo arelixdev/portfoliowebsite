@@ -107,10 +107,29 @@ html{
     font-family: 'Bai Jamjuree', cursive;
 }
 
+
+
 .header .max-width{
     margin: auto 0 auto 40px;
     position: absolute;
     top: 50vh;
+}
+
+.header-portrait{
+    background: linear-gradient(45deg, rgba(208,41,39,0.75) 0%, rgba(236,132,13,0.75) 50%, rgba(255,209,0,0.75) 100%);
+    border-radius: 74% 26% 55% 44% / 43% 25% 75% 56%;
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    top: 35vh;
+    right: 10%;
+    z-index: 80;
+    overflow: hidden;
+}
+
+.portrait-me{
+    width: 400px;
+    height: 400px;
 }
 
 .header .header-content .text-1{
@@ -302,7 +321,10 @@ html{
 }
 
 .about .about-content .right{
-    width: 55%;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    padding-bottom: 20px;
 }
 
 .about .about-content .right .text{
@@ -317,14 +339,11 @@ html{
 }
 
 .about .about-content h2{
+    margin: 40px 0;
     font-size: 35px;
     text-decoration: underline;
     text-underline-offset: 0.5em;
     text-decoration-color: orange;
-}
-
-.about .about-content h2{
-    font-size: 26px;
 }
 
 .about .about-content h4{
