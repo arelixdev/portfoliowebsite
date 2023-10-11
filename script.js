@@ -31,3 +31,8 @@ function currentSlide(n) {
     }
     slides[slideIndex-1].style.display = "block";
   }
+
+  function GoTop() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+  }
