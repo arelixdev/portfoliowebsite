@@ -38,6 +38,22 @@ html{
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
+
+
+.menu-burger{
+    font-size: 0px;
+}
+
+@media screen and (max-width: 750px){
+    .menu{
+        display: none;
+    }
+
+    .menu-burger{
+        font-size: 32px;
+    }
+}
+
 .navbar .max-width{
     display: flex;
     align-items: center;
@@ -98,6 +114,8 @@ html{
     display: none;
 }
 
+
+
 /* Header Section*/
 
 .header{
@@ -131,6 +149,8 @@ html{
     width: 400px;
     height: 400px;
 }
+
+
 
 .header .header-content .text-1{
     font-size: 27px;
@@ -175,8 +195,6 @@ html{
     background: -webkit-linear-gradient(to left, #ffffff, #505050);  
     width: 100%;
     height:100vh;
-    
-   
 }
 
 .circles{
@@ -276,7 +294,35 @@ html{
     animation-duration: 11s;
 }
 
+@media screen and (max-width: 1600px){
+    .header-portrait{
+        right: 10%;
+    }
 
+    .header .max-width{
+        margin: auto 0 auto 5%;
+    }
+}
+
+@media screen and (max-width: 1400px){
+    .header-portrait{
+        right: 5%;
+    }
+
+    .header .max-width{
+        margin: auto 0 auto 0%;
+    }
+}
+
+@media screen and (max-width: 1150px){
+    .header-portrait{
+        display: none;
+    }
+
+    .header .max-width{
+        margin: auto 0 auto 0%;
+    }
+}
 
 @keyframes animate {
 
@@ -364,19 +410,20 @@ html{
 .galery{
     display: flex;
     flex-wrap: wrap;
+    flex-direction: row;
     align-items: center;
     justify-content: center;
-}
 
-.galery .card{
-    width: calc(33% - 20px);
-    height: 23rem;
-    margin: 5px;
+    width:100%;
+    height: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
 }
 
 .galery .card{
     position: relative;
-    width: calc(33% - 20px);
+    width: 350px;
     height: 23rem;
     margin: 5px;
 }
