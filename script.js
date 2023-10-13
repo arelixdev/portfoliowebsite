@@ -36,3 +36,11 @@ function currentSlide(n) {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
   }
+
+  function openMenu(){
+    document.getElementById("menu-mobile").classList.add("active");
+  }
+
+  function unactiveMenu(){
+    document.getElementById("menu-mobile").classList.remove("active");
+  }
